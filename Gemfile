@@ -27,3 +27,6 @@ gem "ecosystem-manager-base", path: "../../../../library/ecosystem-manager-base"
 gem "ecosystems-protege-launch", path: "../../../../library/ecosystems-protege-launch"
 gem "rayswarm-foundation", path: "../../../../structure/user-ecosystem/rayswarm-foundation"
 gem "llm_engine", path: "../../../../library/llm-engine-gem"
+
+# Design system (ViewComponent-based UI components and Tailwind tokens)
+gem "rayswarm-design-system", path: "../../../../domain/horizontal/engine/rayswarm-design-system"

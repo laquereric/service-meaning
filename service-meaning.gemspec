@@ -23,6 +23,7 @@ Gem::Specification.new do |spec|
   end
 
   spec.add_dependency "rails", ">= 7.1"
+  spec.add_dependency "view_component", "~> 3.0"
   spec.add_dependency "service-exception"
   spec.add_dependency "service-biological-it"
   spec.add_dependency "meaning"

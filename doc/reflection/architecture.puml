@@ -1,0 +1,32 @@
+@startuml architecture
+!theme plain
+
+skinparam component {
+  BackgroundColor<<Engine>> #E1F5FE
+  BorderColor<<Engine>> #0288D1
+  BackgroundColor<<Gem>> #FFF3E0
+  BorderColor<<Gem>> #F57C00
+  BackgroundColor<<Model>> #E8F5E9
+  BorderColor<<Model>> #388E3C
+}
+
+title service-meaning\nService container for the meaning engine
+
+package "service-meaning" <<Engine>> {
+  component "DashboardController" as DashboardController
+}
+
+component "rails" as Rails #F5F5F5
+
+component "view_component" as ViewComponent #F5F5F5
+
+component "service-exception" as ServiceException #F5F5F5
+
+component "service-biological-it" as ServiceBiologicalIt #F5F5F5
+
+component "meaning" as Meaning #F5F5F5
+
+ServiceMeaning ..> Rails : depends on
+
+caption Service container for the meaning engine
+@enduml
